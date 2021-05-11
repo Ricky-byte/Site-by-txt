@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Jogo da carta</title>
+<link rel = "icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9-52B994vPKZRhfJNnnroTcFdJwo1PnbJQ&usqp=CAU" type = "image/x-icon">
+<style>
+
+	.Cartas{
+		display: flex;
+		flex-flow: flow;
+		justify-content: center;
+	}
+	.Carta{
+		margin: 12px;
+	}
+	img {
+		max-width: 200px;
+	}
+	.Cabeçalho{
+		text-align: center;
+	}
+
+    body {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		background-color:gray;
+    }
+	
+</style>
+</head>
+<body>
+	<h1 class="Cabeçalho">Bem-vindo ao jogo da memoria</h1>
+
+	<div class="Jogo">
+		<div class="Cartas">
+			<div class="Carta">
+				<img src="Carta.png">
+			</div>
+
+			<div class="Carta">
+				<img src="Carta.png">
+			</div>
+
+			<div class="Carta">	
+				<img src="Carta.png">
+			</div>
+
+			<div class="Carta">
+				<img id="ultima-carta" src="Carta.png">
+			</div>
+
+			<div class="Carta">
+				<img id="ultima-carta" src="Carta.png">
+			</div>
+
+		</div>
+
+	</div>
+
+
+<p><em>Obrigado por jogar e ver o site!!!</em></p>
+</body>
+<script>
+	document.getElementById("ultima-carta").onclick = function(s) {
+		document.getElementById("ultima-carta").setAttribute("src", "http://der.df.gov.br/wp-content/uploads/2019/02/IMG-20190130-WA0031-300x225.jpg")
+	}
+  </script>
+  
+</html>
