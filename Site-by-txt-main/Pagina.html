@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Jogo da carta</title>
+<link rel = "icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9-52B994vPKZRhfJNnnroTcFdJwo1PnbJQ&usqp=CAU" type = "image/x-icon">
+<style>
+	.Carta > img {
+		border-radius: 20px;
+	}
+
+	.Cartas{
+		flex-wrap: wrap;
+		flex-direction: row;
+		display: flex;
+		justify-content: center;
+	}
+	.Carta{
+		margin: 12px;
+	}
+	img {
+		max-width: 200px;
+	}
+	.Cabeçalho{
+		text-align: center;
+	}
+
+    body {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		background-color:gray;
+    }
+	
+</style>
+</head>
+<body>
+	<h1 class="Cabeçalho">Bem-vindo ao jogo da memoria</h1>
+
+	<div class="Jogo">
+		<div class="Cartas">
+			<div class="Carta">
+				<img id="Carta_1" src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img src="omer-elfassy-backcards-race.jpg">
+				
+			</div>
+
+			<div class="Carta">	
+				<img src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img id="Carta_9" src="omer-elfassy-backcards-race.jpg">
+			</div>
+
+			<div class="Carta">
+				<img id="ultima-carta" src="omer-elfassy-backcards-race.jpg">
+			</div>
+		</div>
+
+	</div>
+
+
+<p><em>Obrigado por jogar e ver o site!!!</em></p>
+</body>
+<script>
+	document.getElementById("ultima-carta").onclick = function(s) {
+		document.getElementById("ultima-carta").setAttribute("src", "http://der.df.gov.br/wp-content/uploads/2019/02/IMG-20190130-WA0031-300x225.jpg")
+	}
+		document.getElementById("Carta_9").onclick = function(s) {
+		document.getElementById("Carta_9").setAttribute("src", "Cara 1-9.png")
+	}
+		document.getElementById("Carta_1").onclick = function(s) {
+		document.getElementById("Carta_1").setAttribute("src", "Cara 1-9.png")
+	}
+  </script>
+  
+</html>
